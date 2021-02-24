@@ -1,0 +1,207 @@
+body {
+  font-family: Source Serif Pro, serif;
+  background-image: url(https://image.freepik.com/vector-gratis/resumen-papel-hexagono-fondo-blanco_51543-7.jpg);
+  padding-bottom: 3rem; }
+
+.Home {
+  color: chocolate;
+  text-decoration: underline chocolate; }
+
+hr {
+  height: 4px;
+  background-color: black; }
+
+/*HTML index*/
+h1 {
+  color: coral;
+  text-align: center;
+  margin-top: 0; }
+
+h2 {
+  color: #5a5a5a; }
+
+.DivCanciones {
+  width: 100%;
+  height: 30px; }
+
+ul {
+  list-style-type: square; }
+
+h3 {
+  color: crimson;
+  font-style: italic; }
+
+.img {
+  width: 120px;
+  height: 120px;
+  border: solid black 4px !important;
+  display: inline;
+  transform: translate(15px, 10px) rotate(-5deg); }
+
+/*HTML Noticias*/
+.padre-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch; }
+  .padre-flex__hijo-flex {
+    background-color: coral;
+    height: 600px;
+    width: 600px;
+    border: solid black 2px;
+    margin-right: 5px;
+    padding: 2px;
+    text-align: justify;
+    overflow: auto; }
+    .padre-flex__hijo-flex--nuevo {
+      order: -1; }
+
+.imagenes {
+  width: 300px;
+  height: 200px;
+  border: solid black 4px; }
+
+#Titulos {
+  color: #0511F2;
+  text-align: left;
+  font-size: 20px;
+  text-decoration: underline 2px;
+  text-align: center;
+  animation-name: Titulos_Noticias;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 3s; }
+
+/*Html Contactos*/
+#PiedePaginacontactos {
+  font-style: italic;
+  font-size: 20px; }
+
+/*HTML DE LAS MAS ESCUCHADAS*/
+section {
+  display: inline-flex;
+  /*Tener en cuenta este SECTION*/ }
+
+.imagenes__PrimeraImagen {
+  width: 113px;
+  height: 120px;
+  margin-left: 20px;
+  transition: height 2s, width 2s; }
+
+.imagenes__SegundaImagen {
+  margin-left: 80px; }
+
+.Primercontenedor {
+  width: 400px;
+  height: 500px;
+  margin: 0 0 0 50px;
+  border: solid black 4px;
+  border-radius: 4px;
+  color: white;
+  display: inline-block; }
+  .Primercontenedor__ImagenDeFondo {
+    background-image: url(https://image.freepik.com/vector-gratis/gesto-rock-letrero-neon_1262-21375.jpg);
+    background-size: contain; }
+  .Primercontenedor__margenPrimerparrafo {
+    padding-top: 0; }
+
+.SegundoContenedor {
+  width: 400px;
+  height: 500px;
+  border: solid black 4px;
+  border-radius: 4px;
+  color: white;
+  display: inline-block;
+  margin: 0 0 0 335px; }
+  .SegundoContenedor__ImagenDeFondo {
+    background-image: url(https://jukebox.es/wp-content/uploads/2019/06/musica-pop.jpg);
+    background-size: contain; }
+  .SegundoContenedor__PaddingSegundoContenedor {
+    padding-top: 0px; }
+
+/*Colecciones*/
+.PadreContenedor {
+  display: grid;
+  grid-template-areas: "mayor mayor" "cabeza cabezon" "main main";
+  grid-column-gap: 10px;
+  grid-row-gap: 10px; }
+  .PadreContenedor__ImagenesColecciones {
+    height: 200px;
+    width: 250px;
+    padding-top: 0;
+    padding-bottom: 4px; }
+
+.Titulos__TituloArtista {
+  color: white;
+  font-size: 20px;
+  text-decoration: underline 2px;
+  text-align: center;
+  padding-bottom: 0; }
+
+.Titulos__TitulosCanciones {
+  color: white;
+  text-align: center; }
+  .Titulos__TitulosCanciones__AudiosColecciones {
+    text-align: center; }
+
+.Contenedores__ContenedorEminem {
+  grid-area: mayor;
+  border: solid black 4px;
+  border-radius: 5px;
+  background-color: #261514; }
+  .Contenedores__ContenedorEminem__TitulosCancionesEminem {
+    color: white;
+    text-align: center; }
+
+.Contenedores__ContenedorElectronica {
+  grid-area: cabeza;
+  border: solid black 4px;
+  border-radius: 5px;
+  background-color: midnightblue; }
+
+.Contenedores__ContenedorBeatles {
+  grid-area: cabezon;
+  border: solid black 4px;
+  border-radius: 5px;
+  background-color: black; }
+
+.Contenedores__ContenedorMarley {
+  grid-area: main;
+  border: solid black 4px;
+  border-radius: 5px;
+  background-color: #A68241; }
+  .Contenedores__ContenedorMarley__ImagenMarley {
+    height: 350px;
+    width: 700px; }
+
+/*Animaciones*/
+.MarcadorContactos {
+  width: 120px;
+  height: 20px;
+  transition: all 2s; }
+  .MarcadorContactos__MarcadorContactos:focus {
+    width: 160px;
+    height: 40px;
+    font-size: 20px; }
+
+.AgrandadoDeImagen:hover {
+  height: 170px;
+  width: 170px; }
+
+#Gradiente {
+  background-image: linear-gradient(to left, #3498db, orange); }
+
+@keyframes Titulos_Noticias {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
+
+/*Media Queries*/
+@media (max-width: 576px) {
+  .TituloPrincipal {
+    font-size: x-large;
+    margin-top: 7px; } }
